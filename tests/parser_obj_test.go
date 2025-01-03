@@ -46,7 +46,7 @@ func TestParseOBJ(t *testing.T) {
 		{VertexIndices: []int32{0, 1, 2}},
 	}
 
-	t.Logf("Faces: %v", model.Faces)
+	t.Logf("Faces: %+v", model.Faces)
 
 	if len(model.Vertices) != len(expectedVertices) {
 		t.Fatalf("Expected %d vertices, got %d", len(expectedVertices), len(model.Vertices))
